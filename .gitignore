@@ -1,0 +1,79 @@
+# ============================
+# Python / FastAPI .gitignore
+# ============================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Environment variables
+*.env
+.env.*
+
+# VSCode and IDE files
+.vscode/
+.idea/
+
+# macOS / Linux system files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+*.out
+
+# Test / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+
+# Build / distribution
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Database / temporary data
+*.sqlite3
+*.db
+data/
+tmp/
+
+# FastAPI auto-generated / compiled files
+__pycache__/
+*.pyc
+*.pyo
+
+# Migrations (optional, if you don’t want to commit)
+#migrations/
+
+# Docker
+*.pid
+*.seed
+docker-compose.override.yml
+*.bak
+*.swp
+
+# Other tools
+celerybeat-schedule
+instance/
+.scrapy
+
+# Local dev config
+*.local
+config.dev.json
+
+# Jupyter notebooks
+.ipynb_checkpoints
