@@ -51,5 +51,33 @@ response: {
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OGVhYzIwYzYwMGVhZWE1YTUyMjQ3YjQiLCJpYXQiOjE3NjAyOTU1ODEsImV4cCI6MTc2MDI5NjQ4MSwiZW1haWwiOiJzdWJoYWppdG5hc2thcjk5QGdtYWlsLmNvbSJ9.YWKhjCMBbxXg8-U_YbbZbCRakDkulqi-eyg-CzA8DNs"
 }
 
+API 4:
+method : GET
+URL for the Get method: http://localhost:8000/users/me
+Bearer Token type : Authorization Header is Token
+Sample request : BODY is null
+
+Sample response : 
+
+{
+    "status": "success",
+    "message": "User details updated successfully",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OGVkZjA0YjUwMjg1ODZmYmRiNTk3NTIiLCJpYXQiOjE3NjA0MzAzMzksImV4cCI6MTc2MDQzMTIzOSwiZW1haWwiOiJzdWJoYWppdG5hc2thcjk5QGdtYWlsLmNvbSJ9.zGDWht-8ajh3S9JDPjSNMCQ2gQIRLNQFRza2-p8MpFI",
+    "email": "subhajitnaskar99@gmail.com",
+    "full_name": "Subhajit naskar",
+    "role": "client",
+    "phone": "8981122182",
+    "address": {
+        "street": "Main Street",
+        "city": "Kolkata",
+        "state": "WB",
+        "pin_code": "700001",
+        "country": "India"
+    },
+    "dob": null,
+    "gender": null
+}
+
+API 5:
 
 
