@@ -76,9 +76,11 @@ async def verify_email_code(payload: VerifyEmailIn):
     if not user:
         res = await users_collection.insert_one({"email": payload.email, "created_at": datetime.utcnow()})
         user_id = str(res.inserted_id)
+        already_user = False
     else:
         user_id = str(user["_id"])
+        already_user = True
 
     token = create_access_token(subject=user_id, extra={"email": payload.email})
     print (decode_token(token))
-    return {"access_token": token, "token_type": "bearer"}
+    return {"access_token": token, "token_type": "bearer", "already_user": already_user}
