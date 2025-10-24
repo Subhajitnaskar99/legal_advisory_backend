@@ -19,10 +19,17 @@ Request: {
     "email":"subhajitnaskar99@gmail.com",
     "code":"891047"
 }
-response : {
-    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OGVhYzIwYzYwMGVhZWE1YTUyMjQ3YjQiLCJpYXQiOjE3NjAyOTU1ODEsImV4cCI6MTc2MDI5NjQ4MSwiZW1haWwiOiJzdWJoYWppdG5hc2thcjk5QGdtYWlsLmNvbSJ9.YWKhjCMBbxXg8-U_YbbZbCRakDkulqi-eyg-CzA8DNs",
-    "token_type": "bearer"
+
+
+    	
+Response body
+{
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OGZiNDU1M2EyZmFmNGU4YjVhZTFlMTAiLCJpYXQiOjE3NjEyOTc3NDcsImV4cCI6MTc2MTI5ODY0NywiZW1haWwiOiJzdWJoYWppdEBnbWFpbC5jb20ifQ.zfZIrVhmD1sNFzCtUe2tI5TV4oWgzWWjgrXMWFVWXE4",
+  "token_type": "bearer",
+  "already_user": false,
+  "full_name": null
 }
+
 
 API 3:
 
