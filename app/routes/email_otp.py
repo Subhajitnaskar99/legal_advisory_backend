@@ -73,6 +73,7 @@ async def verify_email_code(payload: VerifyEmailIn):
 
     await email_otps_collection.delete_one({"_id": doc["_id"]})
     user = await users_collection.find_one({"email": payload.email})
+    full_name = user.get("full_name") if user else None
     if not user:
         res = await users_collection.insert_one({"email": payload.email, "created_at": datetime.utcnow()})
         user_id = str(res.inserted_id)
@@ -83,4 +84,5 @@ async def verify_email_code(payload: VerifyEmailIn):
 
     token = create_access_token(subject=user_id, extra={"email": payload.email})
     print (decode_token(token))
-    return {"access_token": token, "token_type": "bearer", "already_user": already_user}
+    return {"access_token": token, "token_type": "bearer", "already_user": already_user,
+            "full_name": full_name}
