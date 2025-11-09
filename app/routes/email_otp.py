@@ -41,7 +41,7 @@ async def send_email(to: str, subject: str, body: str):
         )
         print(f"📧 Email sent to {to}")
     except Exception as e:
-        print(f"❌ Failed to send email: {e}")
+        print(f"❌ Unable to send email: {e}")
         raise HTTPException(status_code=500, detail="Email sending failed.")
 @router.post("/send_email_code")
 async def send_email_code(payload: SendEmailIn):
