@@ -19,4 +19,4 @@ EXPOSE 8000
 
 # Run FastAPI using Uvicorn
 # Note: 'app.main:app' = app/main.py contains "app = FastAPI()"
-CMD ["uvicorn", "app.main:app", "--host", "127.0.0.1", "--port", "8000"]
+CMD ["venv/bin/uvicorn", "app.main:app", "--host", "127.0.0.1", "--port", "8000"]
